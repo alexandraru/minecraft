@@ -1,5 +1,9 @@
 import {create} from 'zustand';
 import { nanoid } from 'nanoid';
+import cors from 'cors';
+
+const server = express();
+server.use(cors());
 
 const getLocalStorage = (key) => JSON.parse(window.localStorage.getItem(key));
 const setLocalStorage = (key) => JSON.stringify(window.localStorage.setItem(key, JSON.stringify(value)));
