@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    user-select: none;
+}
+
+body {
+    position: fixed;
+    overflow: hidden;
+    overscroll-behavior-y: none;
+    font-size: 40px;
+}
